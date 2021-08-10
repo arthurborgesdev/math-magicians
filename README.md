@@ -6,6 +6,9 @@
 
 The objective of this exercise was to install React using create-react-app and set up linters and README. 
 
+![screenshot](./screenshot.png)
+
+
 ## Built With
 
 - JavaScript/React
