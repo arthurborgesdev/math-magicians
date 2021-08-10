@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 class CalculatorButton extends React.Component {
   render() {
     const { text } = this.props;
-    return <div>{text}</div>;
+    return <div className="keyboard-button">{text}</div>;
   }
 }
 

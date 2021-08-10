@@ -1,3 +1,34 @@
 .calculator-component {
-  
+  width: 300px;
+  height: 300px;
+}
+
+.calculator-display {
+  text-align: right;
+  background-color: #858694;
+  color: #fff;
+  border: 1px solid #858694;
+}
+
+.calculator-keyboard {
+  display: flex;
+  border: 1px solid #858694;
+}
+
+.calculator-digits {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e0e0e0;
+  border: 1px solid #858694;
+}
+
+.calculator-operators {
+  background-color: #f1913d;
+  border: 1px solid #858694;
+}
+
+.keyboard-button {
+  border: 1px solid #858694;
+  width: 50px;
+  flex-grow: 3;
 }
