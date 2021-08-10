@@ -20,16 +20,16 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #e0e0e0;
-  border: 1px solid #858694;
+  border: 1px solid #c3c3c3;
 }
 
 .calculator-operators {
   background-color: #f1913d;
-  border: 1px solid #858694;
+  border: 1px solid #c3c3c3;
 }
 
 .keyboard-button {
-  border: 1px solid #858694;
+  border: 1px solid #c3c3c3;
   width: 70px;
   height: 30px;
   flex-grow: 1;
