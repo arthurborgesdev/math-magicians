@@ -5,6 +5,7 @@
 
 .calculator-display {
   text-align: right;
+  height: 20px;
   background-color: #858694;
   color: #fff;
   border: 1px solid #858694;
@@ -29,6 +30,9 @@
 
 .keyboard-button {
   border: 1px solid #858694;
-  width: 50px;
-  flex-grow: 3;
+  width: 70px;
+  height: 30px;
+  flex-grow: 1;
+  align-items: center;
+  margin: 0 auto;
 }
