@@ -22,14 +22,15 @@ class CalculatorButton extends React.Component {
   render() {
     const { text } = this.props;
     return (
-      <button
-        type="button"
+      <div
+        role="button"
+        tabIndex={0}
         className="keyboard-button"
         onClick={this.handleClick}
         onKeyDown={this.handleKeyDown}
       >
         {text}
-      </button>
+      </div>
     );
   }
 }
