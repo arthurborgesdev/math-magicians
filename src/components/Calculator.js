@@ -15,11 +15,6 @@ class Calculator extends React.Component {
     this.setState({ calculatorObj: calculate(calcObj, text) });
   }
 
-  componentWDidMount() {
-    const calculatorObj = calculate({}, 'AC');
-    this.setState({ calculatorObj });
-  }
-
   render() {
     const { calculatorObj } = this.state;
 
