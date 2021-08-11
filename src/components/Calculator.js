@@ -22,11 +22,28 @@ class Calculator extends React.Component {
 
   render() {
     const { calculatorObj } = this.state;
+
     console.log(calculatorObj);
+    let display = 0;
+
+    if (calculatorObj.total === null
+      && calculatorObj.next === null && calculatorObj.operation === null) {
+      display = 0;
+    } else if (calculatorObj.total !== null
+      && calculatorObj.next === null && calculatorObj.operation === null) {
+      console.log(calculatorObj.total);
+      display = calculatorObj.total;
+    } else if (Object.keys(calculatorObj).length !== 0) {
+      console.log('xDDD');
+      display = calculatorObj.operation ? calculatorObj.total : calculatorObj.next;
+    }
+
+    console.log('calc', calculatorObj.total);
+
     return (
       <div className="calculator-component">
         <div className="calculator-display">
-          { calculatorObj.next }
+          { display }
         </div>
         <div className="calculator-keyboard">
           <div className="calculator-digits">

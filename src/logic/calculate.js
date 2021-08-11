@@ -31,7 +31,7 @@ export default function calculate(obj, buttonName) {
       if (obj.next) {
         return { next: obj.next + buttonName };
       }
-      return { next: buttonName };
+      return { ...obj, next: buttonName };
     }
     // If there is no operation, update next and clear the value
     if (obj.next) {
