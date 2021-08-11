@@ -9,12 +9,14 @@ class CalculatorButton extends React.Component {
     this.handleKeyDown = this.handleKeyDown.bind(this);
   }
 
-  handleClick(e) {
-    this.props.onClick();
+  handleClick() {
+    const { text, onClick, calcObj } = this.props;
+    onClick(calcObj, text);
   }
 
-  handleKeyDown(e) {
-
+  handleKeyDown() {
+    const { text, onClick, calcObj } = this.props;
+    onClick(calcObj, text);
   }
 
   render() {
@@ -32,6 +34,8 @@ class CalculatorButton extends React.Component {
 
 CalculatorButton.propTypes = {
   text: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  calcObj: PropTypes.object.isRequired,
 };
 
 export default CalculatorButton;

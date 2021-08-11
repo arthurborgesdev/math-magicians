@@ -17,7 +17,7 @@ class Calculator extends React.Component {
   }
 
   render() {
-    const { display } = this.state;
+    const { display, calculatorObj } = this.state;
 
     return (
       <div className="calculator-component">
@@ -26,27 +26,27 @@ class Calculator extends React.Component {
         </div>
         <div className="calculator-keyboard">
           <div className="calculator-digits">
-            <CalculatorButton text="AC" onClick={this.calculate} />
-            <CalculatorButton text="+/-" onClick={this.calculate} />
-            <CalculatorButton text="%" onClick={calculate} />
-            <CalculatorButton text="7" onClick={calculate} />
-            <CalculatorButton text="8" onClick={calculate} />
-            <CalculatorButton text="9" onClick={calculate} />
-            <CalculatorButton text="4" onClick={calculate} />
-            <CalculatorButton text="5" onClick={calculate} />
-            <CalculatorButton text="6" onClick={calculate} />
-            <CalculatorButton text="1" onClick={calculate} />
-            <CalculatorButton text="2" onClick={calculate} />
-            <CalculatorButton text="3" onClick={calculate} />
-            <CalculatorButton text="0" onClick={calculate} />
-            <CalculatorButton text="." onClick={calculate} />
+            <CalculatorButton text="AC" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="+/-" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="%" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="7" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="8" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="9" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="4" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="5" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="6" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="1" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="2" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="3" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="0" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="." onClick={this.calculate} calcObj={calculatorObj} />
           </div>
           <div className="calculator-operators">
-            <CalculatorButton text="÷" onClick={calculate} />
-            <CalculatorButton text="x" onClick={calculate} />
-            <CalculatorButton text="-" onClick={calculate} />
-            <CalculatorButton text="+" onClick={calculate} />
-            <CalculatorButton text="=" onClick={calculate} />
+            <CalculatorButton text="÷" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="x" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="-" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="+" onClick={this.calculate} calcObj={calculatorObj} />
+            <CalculatorButton text="=" onClick={this.calculate} calcObj={calculatorObj} />
           </div>
         </div>
       </div>
