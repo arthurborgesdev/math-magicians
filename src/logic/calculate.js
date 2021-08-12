@@ -49,9 +49,9 @@ export default function calculate(obj, buttonName) {
   if (buttonName === '.') {
     if (obj.next) {
       if (obj.next.includes('.')) {
-        return {};
+        return { ...obj };
       }
-      return { next: `${obj.next}.` };
+      return { ...obj, next: `${obj.next}.` };
     }
     if (obj.operation) {
       return { next: '0.' };
