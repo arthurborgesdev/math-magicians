@@ -25,6 +25,7 @@
 
 .calculator-operators {
   background-color: #f1913d;
+  width: fit-content;
   border: 1px solid #c3c3c3;
 }
 
@@ -35,4 +36,10 @@
   flex-grow: 1;
   align-items: center;
   margin: 0 auto;
+  cursor: pointer;
+  background-color: #e0e0e0;
+}
+
+.calculator-operators .keyboard-button {
+  background-color: #f1913d;
 }

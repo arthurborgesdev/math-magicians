@@ -12,6 +12,7 @@ The objective of this exercise was to install React using create-react-app and s
 ## Built With
 
 - JavaScript/React
+- React Events
 - JSX
 - CSS
 - VSCode
@@ -51,3 +52,4 @@ Give a ⭐️ if you like this project!
 
 - Microverse
 - React documentation
+- Lots and lots of Stack Overflow questions and answers
