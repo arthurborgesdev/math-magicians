@@ -103,7 +103,7 @@ export default function calculate(obj, buttonName) {
   // User pressed an operation button and there is an existing operation
   if (obj.operation) {
     if (obj.total && !obj.next) {
-      return { operation: buttonName };
+      return { ...obj, operation: buttonName };
     }
 
     return {
