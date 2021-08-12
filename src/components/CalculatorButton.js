@@ -6,15 +6,9 @@ class CalculatorButton extends React.Component {
     super(props);
     this.state = {};
     this.handleClick = this.handleClick.bind(this);
-    this.handleKeyDown = this.handleKeyDown.bind(this);
   }
 
   handleClick() {
-    const { text, onClick, calcObj } = this.props;
-    onClick(calcObj, text);
-  }
-
-  handleKeyDown() {
     const { text, onClick, calcObj } = this.props;
     onClick(calcObj, text);
   }
@@ -24,10 +18,8 @@ class CalculatorButton extends React.Component {
     return (
       <button
         type="button"
-        tabIndex={0}
         className="keyboard-button"
         onClick={this.handleClick}
-        onKeyDown={this.handleKeyDown}
       >
         {text}
       </button>
