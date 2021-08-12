@@ -18,6 +18,8 @@ const Calculator = () => {
     display = calculatorObj.next !== null ? calculatorObj.next : calculatorObj.total;
   }
 
+  console.log(calculatorObj);
+
   return (
     <div className="calculator-component">
       <div className="calculator-display">
