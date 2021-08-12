@@ -29,7 +29,7 @@ export default function calculate(obj, buttonName) {
     // If there is an operation, update next
     if (obj.operation) {
       if (obj.next) {
-        return { next: obj.next + buttonName };
+        return { ...obj, next: obj.next + buttonName };
       }
       return { ...obj, next: buttonName };
     }

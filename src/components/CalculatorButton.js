@@ -30,12 +30,7 @@ class CalculatorButton extends React.Component {
 CalculatorButton.propTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-  calcObj: PropTypes.objectOf([
-    PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.object,
-    ]),
-  ]).isRequired,
+  calcObj: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 // PropTypes.checkPropTypes(CalculatorButton, props, 'prop', 'CalculatorButton');
