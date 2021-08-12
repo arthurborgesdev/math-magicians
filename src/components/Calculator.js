@@ -20,19 +20,24 @@ class Calculator extends React.Component {
 
     console.log(calculatorObj);
     let display = 0;
-
-    if (calculatorObj.total === null
-      && calculatorObj.next === null && calculatorObj.operation === null) {
+    if (Object.keys(calculatorObj).length === 0 || (calculatorObj.total === null
+      && calculatorObj.next === null
+      && calculatorObj.operation === null)) {
       display = 0;
-    } else if (calculatorObj.total !== null
+    } else {
+      display = calculatorObj.next !== null ? calculatorObj.next : calculatorObj.total;
+    }
+    console.log('display', display);
+    /*
+    if (calculatorObj.total !== null
       && calculatorObj.next === null && calculatorObj.operation === null) {
       console.log(calculatorObj.total);
       display = calculatorObj.total;
-    } else if (Object.keys(calculatorObj).length !== 0) {
-      console.log('xDDD');
-      display = calculatorObj.operation ? calculatorObj.total : calculatorObj.next;
-    }
-
+    } else if (calculatorObj.total !== null && calculatorObj.next === null
+      && calculatorObj.operation !== null) {
+      display = calculatorObj.total;
+    } else if ()
+    */
     console.log('calc', calculatorObj.total);
 
     return (
