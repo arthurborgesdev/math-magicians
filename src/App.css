@@ -1,17 +1,18 @@
-/* ----------- App.js ------------*/
+/* ----------- App.js ------------ */
 
 body {
   background-color: beige;
 }
 
-/* ----------- NavBar -------------*/
+/* ----------- NavBar ------------- */
 
 h1 {
   font-weight: bold;
   color: #f1913d;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-weight: bold;
   color: #858694;
 }
