@@ -5,6 +5,8 @@
 > Single Page Application that explains about math and has a calculator widget
 
 The objective of this exercise was to install React using create-react-app and set up linters and README. 
+Later, we had to assemble a calculator using React, and the provided calculator code. Then, we had to create three pages
+and their navigation using React Router.
 
 ![screenshot](./screenshot.png)
 
@@ -13,6 +15,8 @@ The objective of this exercise was to install React using create-react-app and s
 
 - JavaScript/React
 - React Events
+- React Hooks
+- React Router
 - JSX
 - CSS
 - VSCode
