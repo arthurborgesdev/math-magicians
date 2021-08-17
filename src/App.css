@@ -1,8 +1,62 @@
-.App {
+/* ----------- App.js ------------*/
+
+body {
+  background-color: beige;
+}
+
+/* ----------- NavBar -------------*/
+
+h1 {
+  font-weight: bold;
+  color: #f1913d;
+}
+
+h2, h3 {
+  font-weight: bold;
+  color: #858694;
+}
+
+.navbar-component {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-list {
+  display: flex;
+  margin: 30px;
+  list-style-type: none;
+}
+
+.navbar-list-items {
+  margin-right: 15px;
+  font-size: large;
+}
+
+.navbar-list-items a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #f1913d;
+}
+
+.pipe-divisor {
+  margin-left: 5px;
+}
+
+/* ---------- CalculatorPage ----------- */
+
+.calculator-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+/* ---------- Quotes ----------- */
+
+.quote-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 50vh;
 }

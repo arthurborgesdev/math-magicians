@@ -21,20 +21,21 @@ const NavBar = () => {
   ];
 
   return (
-    <>
+    <div className="navbar-component">
       <h1>Math Magicians</h1>
-      <nav className="navBar">
-        <ul>
+      <nav className="navbar">
+        <ul className="navbar-list">
           {links.map((link) => (
-            <li key={link.id}>
+            <li key={link.id} className="navbar-list-items">
               <NavLink to={link.path} activeClassName="active-link" exact>
                 {link.text}
               </NavLink>
+              <span className="pipe-divisor"> | </span>
             </li>
           ))}
         </ul>
       </nav>
-    </>
+    </div>
   );
 };
 
