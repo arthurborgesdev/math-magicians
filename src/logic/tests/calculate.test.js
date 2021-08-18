@@ -175,7 +175,7 @@ describe('', () => {
   });
 
   test("when press '.' it adds the '.' if total doesn't contains '.'", () => {
-    expect(calculate({ total: '6', next: null }, '.')).toStrictEqual({ total: '6.'});
+    expect(calculate({ total: '6', next: null }, '.')).toStrictEqual({ total: '6.' });
   });
 
   test("when press '.' it adds the '0.' if total doesn't exists", () => {
