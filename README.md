@@ -6,7 +6,7 @@
 
 The objective of this exercise was to install React using create-react-app and set up linters and README. 
 Later, we had to assemble a calculator using React, and the provided calculator code. Then, we had to create three pages
-and their navigation using React Router.
+and their navigation using React Router. The final objective was to write and run unit, component and ui tests using Jest and React Testing Library.
 
 ![screenshot](./screenshot.png)
 
@@ -36,13 +36,24 @@ and their navigation using React Router.
 - Run `yarn start` on a Terminal to start the server 
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Author
+## Tests
+
+- Run `npm run test` on a Terminal to run the test suite
+- Select option letter `a` to run all the tests in the repository
+
+## Authors
 
 👤 **Arthur Borges**
 
 - GitHub: [@arthuborgesdev](https://github.com/arthurborgesdev)
 - Twitter: [@arthurmoises](https://twitter.com/arthurmoises)
 - LinkedIn: [Arthur Borges](https://linkedin.com/in/arthurmoises)
+
+👤 **Mih Julius Ndim**
+
+- Github: [@Mihndim2020](https://github.com/Mihndim2020)
+- Twitter: [@mihndim](https://github.com/mih-julius) 
+- Linkedin: [Mih Julius](https://www.linkedin.com/mih-julius)
 
 ## 🤝 Contributing
 
