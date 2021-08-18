@@ -1,17 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
-import Calculator from '../Calculator'
-import NavBar from '../NavBar'
-import CalculatorButton from '../CalculatorButton'
-import CalculatorPage from '../../pages/CalculatorPage'
-import Home from '../../pages/Home'
-import Quote from '../../pages/Quote'
-
+import { BrowserRouter as Router } from 'react-router-dom';
+import Calculator from '../Calculator';
+import NavBar from '../NavBar';
+import CalculatorButton from '../CalculatorButton';
+import CalculatorPage from '../../pages/CalculatorPage';
+import Home from '../../pages/Home';
+import Quote from '../../pages/Quote';
 
 describe('Testing all components rendering', () => {
   it('Calculator renders correctly', () => {
@@ -29,10 +24,10 @@ describe('Testing all components rendering', () => {
   });
 
   it('CalculatorButton renders correctly', () => {
-    let props = { }
-      props.text = "test"
-    props.onClick = jest.fn(() => {})
-    props.calcObj = {"string": "test"}    
+    const props = { };
+    props.text = 'test';
+    props.onClick = jest.fn(() => {});
+    props.calcObj = { string: 'test' };
     const tree = renderer
       .create(<CalculatorButton props={props} />)
       .toJSON();
@@ -59,5 +54,4 @@ describe('Testing all components rendering', () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
-  
 });
