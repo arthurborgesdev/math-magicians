@@ -24,9 +24,9 @@ describe('Testing all components rendering', () => {
   });
 
   it('CalculatorButton renders correctly', () => {
-    let text = 'test';
-    let onClick = jest.fn(() => {});
-    let calcObj = { string: 'test' };
+    const text = 'test';
+    const onClick = jest.fn(() => {});
+    const calcObj = { string: 'test' };
     const tree = renderer
       .create(<CalculatorButton text={text} onClick={onClick} calcObj={calcObj} />)
       .toJSON();
