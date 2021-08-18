@@ -24,12 +24,11 @@ describe('Testing all components rendering', () => {
   });
 
   it('CalculatorButton renders correctly', () => {
-    const props = { };
-    props.text = 'test';
-    props.onClick = jest.fn(() => {});
-    props.calcObj = { string: 'test' };
+    let text = 'test';
+    let onClick = jest.fn(() => {});
+    let calcObj = { string: 'test' };
     const tree = renderer
-      .create(<CalculatorButton props={props} />)
+      .create(<CalculatorButton text={text} onClick={onClick} calcObj={calcObj} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
