@@ -162,7 +162,9 @@ exports[`Testing all components rendering CalculatorButton renders correctly 1`]
   className="keyboard-button"
   onClick={[Function]}
   type="button"
-/>
+>
+  test
+</button>
 `;
 
 exports[`Testing all components rendering CalculatorPage renders correctly 1`] = `
