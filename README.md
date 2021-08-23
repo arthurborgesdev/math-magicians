@@ -41,6 +41,10 @@ and their navigation using React Router. The final objective was to write and ru
 - Run `npm run test` on a Terminal to run the test suite
 - Select option letter `a` to run all the tests in the repository
 
+## Deploy
+
+- Application is deployed in [Heroku](https://math-magicians-arthur.herokuapp.com) and [Netlify](https://hopeful-tesla-4ad625.netlify.app/).
+
 ## Authors
 
 👤 **Arthur Borges**
